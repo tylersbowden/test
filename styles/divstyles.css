@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+.common{
+    border: 2px solid white;
+    position: absolute;
+}
+.nav{
+    position: relative;
+    float: right;
+    background-color: beige;
+    z-index: 2;
+    font-size: smaller;
+}
+.header{
+    background-color: azure;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: auto;
+    z-index: 1;
+}
+.main{
+    background-color: cadetblue;
+    top: 82px;
+    left: 0px;
+    right: 0px;
+    bottom: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.footer{
+    position: fixed;
+    background-color: coral;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: auto;
+}
+img{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

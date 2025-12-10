@@ -1,0 +1,54 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: aliceblue;
+    background-image: url(https://t4.ftcdn.net/jpg/04/67/80/73/360_F_467807325_ipS28CoOV6teErcS1VpTuVHPJfFLoinv.jpg);
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+h1{
+    font-family: papyrus, 'Comic Sans MS', fantasy;
+}
+p{
+    padding: 5px;
+    border: 2px solid blueviolet;
+    margin: 10px;
+}
+img{
+    padding: 4px;
+    border: 15px solid aquamarine;
+    margin: 10px;
+}
+.rizz{
+    font-family: chiller;
+    color: yellow;
+    background-color: fuchsia;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: wavy overline;
+    border: dashed 6px aqua;
+    
+}
+.rizz:hover{
+    font-size: 200%;
+    text-decoration: line-through;
+    text-align: center;
+}
+li:hover{
+    background-color: lightblue;
+}
+a{
+    color: aquamarine;
+}
+a:visited{
+    color:red;
+}
+/* make style that is bold text, block display, pink background, large font, thin black border*/
+a:hover{
+    font-weight: bold;
+    display: block;
+    background-color: pink;
+    font-size: large;
+    border: thin solid black;
+}

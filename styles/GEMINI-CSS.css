@@ -1,0 +1,189 @@
+/* --- Global Reset & Base Styles --- */
+* {
+    box-sizing: border-box; /* Makes padding/border not increase element size */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6; /* Light gray background */
+}
+
+/* --- Layout Containers --- */
+main {
+    max-width: 1000px; /* Max width for content on large screens */
+    margin: 20px auto; /* Centers the main content */
+    padding: 0 20px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #2c3e50; /* Dark blue/charcoal for a professional feel */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+/* --- Typography & Titles --- */
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db; /* A blue accent line */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #34495e;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+h4 {
+    color: #3498db; /* Main accent color */
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.tagline {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* --- Lists (Profile Summary) --- */
+.detail-list {
+    display: flex; /* Use Flexbox for side-by-side lists */
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.list-container {
+    flex: 1; /* Makes each list take equal space */
+    min-width: 250px; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•"; /* Custom bullet point */
+    color: #3498db; 
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* --- Links and Media --- */
+.external-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #2980b9;
+}
+
+.logo-link img {
+    max-width: 100px; /* Smaller, professional logo size */
+    height: auto;
+    display: block;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.media-item {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ecf0f1; /* Light contrast for the footer */
+    color: #7f8c8d;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
